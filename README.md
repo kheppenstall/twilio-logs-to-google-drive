@@ -27,6 +27,11 @@ Note that the tool does not downloads logs that include PII by default. To enabl
 
 ## Usage
 
+* `git clone https://github.com/kheppenstall/twilio-logs-to-google-drive.git`
+* `cd twilio-logs-to-google-drive`
+*
+  `python migrate_logs.py --twilio_account_sid<<sid>> --twilio_auth_token=<<token>> --start=<<YYYY-MM-DD>>`
+
 ### Parameters
 * `twilio_account_sid` - account sid from Twilio console
 * `twilio_auth_token` - auth token from Twilio console
@@ -35,4 +40,4 @@ Note that the tool does not downloads logs that include PII by default. To enabl
 
 ### Example
 
-`python migrate_logs.py --twilio_account_sid=<<sid>> --twilio_auth_token=<<token>> --start=2019-01-01 --pii`
+`python migrate_logs.py --twilio_account_sid=ACXXXXX --twilio_auth_token=XXXXXX--start=2019-01-01 --pii`
